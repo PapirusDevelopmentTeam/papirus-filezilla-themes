@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg7384"
-   style="enable-background:new"
-   height="16"
+   version="1.1"
    width="16"
-   version="1.1">
+   height="16"
+   style="enable-background:new"
+   id="svg7384">
   <defs
      id="defs9" />
   <metadata
@@ -27,12 +27,12 @@
   <title
      id="title8473">Paper Symbolic Icon Theme</title>
   <g
-     id="layer12"
-     transform="matrix(1,0,0,-1,-507,57)">
+     transform="matrix(1,0,0,-1,-507,56)"
+     id="layer12">
     <path
-       id="path8912"
+       style="color:#000000;opacity:0.5;fill:#000000;fill-opacity:1;enable-background:new"
+       d="m 6,2 -5,8 3,0 0,4 4,0 0,-4 3,0 -5,-8 z m 6,8 0,2 -2,0 0,2 2,0 0,2 2,0 0,-2 2,0 0,-2 -2,0 0,-2 -2,0 z"
        transform="matrix(1,0,0,-1,507,57)"
-       d="M 6 2 L 1 10 L 4 10 L 4 14 L 8 14 L 8 10 L 11 10 L 6 2 z M 12 10 L 12 12 L 10 12 L 10 14 L 12 14 L 12 16 L 14 16 L 14 14 L 16 14 L 16 12 L 14 12 L 14 10 L 12 10 z "
-       style="color:#000000;opacity:0.5;enable-background:new;fill:#000000;fill-opacity:1" />
+       id="path8912" />
   </g>
 </svg>
