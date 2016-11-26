@@ -1,13 +1,44 @@
-#!/usr/bin/env bash
-echo "Papirus Filezilla themes"
-sleep 5
-echo "Delete old Papirus Filezilla themes ..."
-sudo rm -rf /usr/share/filezilla/resources/{papirus,papirus-dark}
-echo "Download new version from GitHub ..."
-wget -c https://github.com/PapirusDevelopmentTeam/papirus-filezilla-themes/archive/master.zip -O /tmp/papirus-filezilla-themes.zip
-echo "Unpack archive ..."
-unzip -oq /tmp/papirus-filezilla-themes.zip -d /tmp/
-echo "Installing ..."
-sudo cp -R /tmp/papirus-filezilla-themes-master/{papirus,papirus-dark} /usr/share/filezilla/resources/
-sudo chmod -R 755 /usr/share/filezilla/resources/{papirus,papirus-dark}
-echo "Done!"
+#!/bin/sh
+
+set -e
+
+gh_repo="papirus-filezilla-themes"
+gh_desc="Papirus Filezilla themes"
+
+cat <<- EOF
+
+
+
+      ppppp                         ii
+      pp   pp     aaaaa   ppppp          rr  rrr   uu   uu     sssss
+      ppppp     aa   aa   pp   pp   ii   rrrr      uu   uu   ssss
+      pp        aa   aa   pp   pp   ii   rr        uu   uu      ssss
+      pp          aaaaa   ppppp     ii   rr          uuuuu   sssss
+                          pp
+                          pp
+
+
+  $gh_desc
+  https://github.com/PapirusDevelopmentTeam/$gh_repo
+
+
+EOF
+
+temp_dir=$(mktemp -d)
+
+echo "=> Getting the latest version from GitHub ..."
+wget -O "/tmp/$gh_repo.tar.gz" \
+  https://github.com/PapirusDevelopmentTeam/$gh_repo/archive/master.tar.gz
+echo "=> Unpacking archive ..."
+tar -xzf "/tmp/$gh_repo.tar.gz" -C "$temp_dir"
+echo "=> Deleting old $gh_desc ..."
+sudo rm -rf /usr/share/filezilla/resources/papirus \
+  /usr/share/filezilla/resources/papirus-dark
+echo "=> Installing ..."
+sudo cp --no-preserve=mode,ownership -r \
+  "$temp_dir/$gh_repo-master/papirus" \
+  "$temp_dir/$gh_repo-master/papirus-dark" \
+  "/usr/share/filezilla/resources/"
+echo "=> Clearing cache ..."
+rm -rf "/tmp/$gh_repo.tar.gz" "$temp_dir"
+echo "=> Done!"
