@@ -4,14 +4,14 @@
 
 # Install / Update
 ```
-wget -O - https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install-papirus-root.sh | bash
+wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install-papirus-root.sh | sh
 ```
 **Depends:**
 - wget
-- unzip
+- tar
 - filezilla
 
 # Remove
 ```
-wget -O - https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/remove-papirus.sh | bash
+wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/remove-papirus.sh | sh
 ```
