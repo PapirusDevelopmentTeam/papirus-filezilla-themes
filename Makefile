@@ -12,9 +12,7 @@ uninstall:
 	-rm -rf $(DESTDIR)/usr/share/filezilla/resources/papirus-dark
 
 _get_version:
-	$(eval DATE := $(shell git show -s --format=%cd --date=format:%Y.%m.%d HEAD))
-	$(eval COUNT := $(shell git rev-list --count HEAD))
-	$(eval VERSION := $(DATE)-r$(COUNT))
+	$(eval VERSION := $(shell git show -s --format=%cd --date=format:%Y%m%d HEAD))
 	@echo $(VERSION)
 
 push:
