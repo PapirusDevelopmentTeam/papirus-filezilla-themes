@@ -1,11 +1,2 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<FileZilla3>
-  <Theme>
-    <Name>Papirus Dark</Name>
-    <Author>Alexey Varfolomeev, Papirus Development Team</Author>
-    <Mail>varlesh@gmail.com</Mail>
-    <size>16x16</size>
-    <size>32x32</size>
-    <size>64x64</size>
-  </Theme>
-</FileZilla3>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FileZilla3><Theme><Name>Papirus Dark</Name><Source>papirus-dark</Source><Author>Alexey Varfolomeev</Author><Mail>varlesh@gmail.com</Mail><size primary="1">16x16</size><size primary="1">32x32</size><size primary="1">64x64</size></Theme></FileZilla3>
