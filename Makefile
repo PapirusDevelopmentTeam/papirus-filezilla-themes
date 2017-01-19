@@ -4,11 +4,13 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/filezilla/resources
 	cp --no-preserve=mode,ownership -r \
 		papirus \
+		epapirus \
 		papirus-dark \
 		$(DESTDIR)/usr/share/filezilla/resources
 
 uninstall:
 	-rm -rf $(DESTDIR)/usr/share/filezilla/resources/papirus
+	-rm -rf $(DESTDIR)/usr/share/filezilla/resources/epapirus
 	-rm -rf $(DESTDIR)/usr/share/filezilla/resources/papirus-dark
 
 _get_version:
