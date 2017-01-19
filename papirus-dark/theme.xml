@@ -5,5 +5,7 @@
     <Author>Alexey Varfolomeev, Papirus Development Team</Author>
     <Mail>varlesh@gmail.com</Mail>
     <size>16x16</size>
+    <size>32x32</size>
+    <size>64x64</size>
   </Theme>
 </FileZilla3>
