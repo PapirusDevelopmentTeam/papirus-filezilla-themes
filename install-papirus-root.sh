@@ -33,7 +33,7 @@ echo "=> Unpacking archive ..."
 tar -xzf "/tmp/$gh_repo.tar.gz" -C "$temp_dir"
 echo "=> Deleting old $gh_desc ..."
 sudo rm -rf /usr/share/filezilla/resources/papirus \
-  /usr/share/filezilla/resources/epapirus
+  /usr/share/filezilla/resources/epapirus \
   /usr/share/filezilla/resources/papirus-dark
 echo "=> Installing ..."
 sudo cp --no-preserve=mode,ownership -r \
