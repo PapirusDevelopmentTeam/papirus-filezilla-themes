@@ -1,4 +1,4 @@
 #Sources Papirus FileZilla Themes
 depends for convert to png:
-- rsvg-convert
-- rename
+- librsvg2-bin (rsvg-convert)
+- findutils
