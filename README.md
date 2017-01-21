@@ -15,6 +15,12 @@ wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filez
 ```
 wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/remove-papirus.sh | sh
 ```
+
+#Official packages
+| **Distro** | **Maintainer**  | **Package** |
+|:-----------|:----------------|:------------|
+| Ubuntu     | Sergei Eremenko | [filezilla-theme-papirus](https://launchpad.net/~papirus/+archive/ubuntu/papirus) (PPA) |
+
 # Unofficial packages
 Packages in this section are not part of the official repositories. If you have a trouble or a question please contact with package maintainer.
 
