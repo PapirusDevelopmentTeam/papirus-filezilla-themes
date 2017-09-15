@@ -24,7 +24,7 @@ cat <<- EOF
 
 EOF
 
-temp_dir=$(mktemp -d)
+temp_dir="$(mktemp -d)"
 
 echo "=> Getting the latest version from GitHub ..."
 wget -O "/tmp/$gh_repo.tar.gz" \
@@ -36,7 +36,7 @@ sudo rm -rf /usr/share/filezilla/resources/papirus \
   /usr/share/filezilla/resources/epapirus \
   /usr/share/filezilla/resources/papirus-dark
 echo "=> Installing ..."
-sudo cp --no-preserve=mode,ownership -r \
+sudo cp -R \
   "$temp_dir/$gh_repo-master/papirus" \
   "$temp_dir/$gh_repo-master/epapirus" \
   "$temp_dir/$gh_repo-master/papirus-dark" \
