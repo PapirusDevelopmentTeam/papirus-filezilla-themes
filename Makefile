@@ -6,14 +6,18 @@ install:
 	mkdir -p $(DESTDIR)$(PREFIX)/share/filezilla/resources
 	cp -R \
 		papirus \
-		epapirus \
 		papirus-dark \
+		papirus-adapta \
+		papirus-adapta-nokto \
+		epapirus \
 		$(DESTDIR)$(PREFIX)/share/filezilla/resources
 
 uninstall:
 	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/papirus
-	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/epapirus
 	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/papirus-dark
+	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/papirus-adapta
+	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/papirus-adapta-nokto
+	-rm -rf $(DESTDIR)$(PREFIX)/share/filezilla/resources/epapirus
 
 _get_version:
 	$(eval VERSION := $(shell git show -s --format=%cd --date=format:%Y%m%d HEAD))

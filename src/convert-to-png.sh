@@ -8,6 +8,8 @@ THEMES=(
 	epapirus
 	papirus
 	papirus-dark
+    papirus-adapta
+    papirus-adapta-nokto
 )
 
 SIZES=(

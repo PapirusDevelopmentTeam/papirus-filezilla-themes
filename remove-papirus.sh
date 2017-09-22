@@ -26,6 +26,8 @@ EOF
 
 echo "=> Removing $gh_desc ..."
 sudo rm -rf /usr/share/filezilla/resources/papirus \
-  /usr/share/filezilla/resources/epapirus \
-  /usr/share/filezilla/resources/papirus-dark
+  /usr/share/filezilla/resources/papirus-dark \
+  /usr/share/filezilla/resources/papirus-adapta \
+  /usr/share/filezilla/resources/papirus-adapta-nokto \
+  /usr/share/filezilla/resources/epapirus
 echo "=> Done!"
