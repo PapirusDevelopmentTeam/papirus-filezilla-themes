@@ -37,6 +37,6 @@
   </defs>
   <path
      d="M 8,1 C 5.784,1 4,2.8216 4,5.0625 L 4,7 3,7 C 2.446,7 2,7.446 2,8 l 0,6 c 0,0.554 0.446,1 1,1 l 10,0 c 0.554,0 1,-0.446 1,-1 L 14,8 C 14,7.446 13.554,7 13,7 L 12,7 12,5.0625 C 12,2.8225 10.216,1 8,1 Z m 0,2 c 1.108,0 2,0.892 2,2 L 10,7 6,7 6,5 C 6,3.892 6.892,3 8,3 Z"
-     style="color:#cfd8dc;opacity:1;enable-background:accumulate;fill:#cfd8dc;fill-opacity:1"
+     style="color:#eeefef;opacity:1;enable-background:accumulate;fill:#eeefef;fill-opacity:1"
      id="path5975" />
 </svg>
