@@ -38,7 +38,7 @@ Packages in this section are not part of the official repositories. If you have 
 
 | **Distro** | **Maintainer** | **Package** |
 |:-----------|:---------------|:------------|
-| Arch Linux | Mohammadreza Abdollahzadeh | `yaourt -S papirus-filezilla-themes-git` <sup>AUR [[link](https://aur.archlinux.org/packages/papirus-filezilla-themes-git/)]</sup> |
+| Arch Linux | Mohammadreza Abdollahzadeh | [papirus-filezilla-themes-git](https://aur.archlinux.org/packages/papirus-filezilla-themes-git) <sup>AUR</sup> |
 | openSUSE   | Alexander Postol | [papirus-filezilla-theme](http://software.opensuse.org//download.html?project=home:GNorth:Arc_and_Papirus&package=papirus-filezilla-theme) <sup>OBS [[link](https://build.opensuse.org/package/show/home:GNorth:Arc_and_Papirus/papirus-filezilla-theme)]</sub> |
 
 **NOTE:** If you maintainer and want be in the list please create an issue or send a pull request.
