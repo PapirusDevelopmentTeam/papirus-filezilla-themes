@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   width="16"
-   height="16"
-   style="enable-background:new"
-   id="svg7384">
-  <metadata
-     id="metadata90">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Paper Symbolic Icon Theme</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <title
-     id="title8473">Paper Symbolic Icon Theme</title>
-  <defs
-     id="defs7386" />
-  <path
-     id="path10500-6"
-     style="opacity:1;enable-background:new;fill:#5c616c;fill-opacity:1"
-     d="M 6.25,1 6.0957,2.8438 A 5.5,5.5 0 0 0 4.4883,3.77349 L 2.8125,2.98443 1.0625,6.01563 2.584,7.07223 A 5.5,5.5 0 0 0 2.5,7.99996 5.5,5.5 0 0 0 2.5801,8.9316 l -1.5176,1.0527 1.75,3.0312 1.6719,-0.7871 a 5.5,5.5 0 0 0 1.6113,0.92382 l 0.15,1.85 3.5,0 0.1543,-1.8438 a 5.5,5.5 0 0 0 1.6074,-0.92969 l 1.6758,0.78906 1.75,-3.0312 -1.5215,-1.0566 a 5.5,5.5 0 0 0 0.084,-0.92773 5.5,5.5 0 0 0 -0.0801,-0.93164 l 1.5176,-1.0527 -1.75,-3.0312 -1.6719,0.7871 A 5.5,5.5 0 0 0 9.9,2.85 L 9.75,1 6.25,1 Z M 8,6 A 2,2 0 0 1 10,8 2,2 0 0 1 8,10 2,2 0 0 1 6,8 2,2 0 0 1 8,6 Z" />
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
+ <path style="fill:#5c616c" d="M 6.25,1 6.0957,2.8438 A 5.5,5.5 0 0 0 4.4883,3.77349 L 2.8125,2.98443 1.0625,6.01563 2.584,7.07223 A 5.5,5.5 0 0 0 2.5,7.99996 5.5,5.5 0 0 0 2.5801,8.9316 l -1.5176,1.0527 1.75,3.0312 1.6719,-0.7871 a 5.5,5.5 0 0 0 1.6113,0.92382 l 0.15,1.85 3.5,0 0.1543,-1.8438 a 5.5,5.5 0 0 0 1.6074,-0.92969 l 1.6758,0.78906 1.75,-3.0312 -1.5215,-1.0566 a 5.5,5.5 0 0 0 0.084,-0.92773 5.5,5.5 0 0 0 -0.0801,-0.93164 l 1.5176,-1.0527 -1.75,-3.0312 -1.6719,0.7871 A 5.5,5.5 0 0 0 9.9,2.85 L 9.75,1 6.25,1 Z M 8,6 A 2,2 0 0 1 10,8 2,2 0 0 1 8,10 2,2 0 0 1 6,8 2,2 0 0 1 8,6 Z"/>
 </svg>
