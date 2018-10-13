@@ -42,3 +42,22 @@ Packages in this section are not part of the official repositories. If you have 
 | openSUSE   | Alexander Postol | [papirus-filezilla-theme](http://software.opensuse.org//download.html?project=home:GNorth:Arc_and_Papirus&package=papirus-filezilla-theme) <sup>OBS [[link](https://build.opensuse.org/package/show/home:GNorth:Arc_and_Papirus/papirus-filezilla-theme)]</sub> |
 
 **NOTE:** If you maintainer and want be in the list please create an issue or send a pull request.
+
+###  Manual Install
+
+1. Install dependencies:
+
+    - git
+    - make
+    - librsvg2-bin
+
+2. Run the following commands as normal user:
+
+    ```
+    git clone https://github.com/PapirusDevelopmentTeam/papirus-filezilla-themes.git
+    cd papirus-filezilla-themes
+    make build
+    sudo make install
+    ```
+
+3. Start FileZilla and choose a theme.
