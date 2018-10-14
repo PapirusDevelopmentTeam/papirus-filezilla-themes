@@ -67,6 +67,7 @@ _install() {
     _sudo mkdir -p "$DESTDIR"
 
     for theme in "$@"; do
+        test -d "$temp_dir/$gh_repo-$TAG/$theme" || continue
         _msg "Installing '$theme' ..."
         _sudo cp -R "$temp_dir/$gh_repo-$TAG/$theme" "$DESTDIR"
     done
