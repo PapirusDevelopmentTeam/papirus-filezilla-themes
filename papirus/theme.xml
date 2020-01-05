@@ -5,8 +5,18 @@
 <Source>papirus</Source>
 <Author>Alexey Varfolomeev</Author>
 <Mail>varlesh@gmail.com</Mail>
-<size primary="1">16x16</size>
-<size primary="1">32x32</size>
+<size primary="1">40x40</size>
+<size primary="1">44x44</size>
+<size primary="1">48x48</size>
+<size primary="1">56x56</size>
+<size primary="1">52x52</size>
+<size primary="1">60x60</size>
 <size primary="1">64x64</size>
+<size primary="1">16x16</size>
+<size primary="1">24x24</size>
+<size primary="1">20x20</size>
+<size primary="1">28x28</size>
+<size primary="1">36x36</size>
+<size primary="1">32x32</size>
 </Theme>
 </FileZilla3>
