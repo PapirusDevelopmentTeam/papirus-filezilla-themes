@@ -17,7 +17,7 @@ uninstall:
 	-rm -rf $(foreach icon_theme,$(ICON_THEMES),$(DESTDIR)$(PREFIX)/share/filezilla/resources/$(icon_theme))
 
 dist: _get_version
-	git archive --format=tar.gz -o $(notdir $(CURDIR))-$(VERSION).tar.gz master -- $(ICON_THEMES)
+	git archive --format=zip -o $(notdir $(CURDIR))-$(VERSION).zip master -- $(ICON_THEMES)
 
 _get_version:
 	$(eval VERSION := $(shell git show -s --format=%cd --date=format:%Y%m%d HEAD))
