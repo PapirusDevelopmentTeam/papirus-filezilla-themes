@@ -49,7 +49,7 @@ Packages in this section are not part of the official repositories. If you have 
 
     - git
     - make
-    - librsvg2-bin
+    - imagemagick
 
 2. Run the following commands as normal user:
 
