@@ -26,7 +26,7 @@ EOF
 
 : "${DESTDIR:=/usr/share/filezilla/resources}"
 : "${TAG:=master}"
-: "${THEMES:=papirus epapirus papirus-dark papirus-adapta papirus-adapta-nokto}"
+: "${THEMES:=papirus epapirus papirus-dark}"
 : "${uninstall:=false}"
 
 _msg() {

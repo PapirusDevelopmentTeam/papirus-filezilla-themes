@@ -8,8 +8,6 @@ declare -a THEMES=(
 	epapirus
 	papirus
 	papirus-dark
-	papirus-adapta
-	papirus-adapta-nokto
 )
 
 declare -a SIZES=(
@@ -48,18 +46,6 @@ for theme in "${THEMES[@]}"; do
 			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
 				-e 's/#444444/#6e6e6e/gI' \
 				-e 's/#4285f4/#4285f4/gI' '{}' \;
-			;;
-		papirus-adapta)
-			theme_name="Papirus Adapta"
-			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#444444/#414c52/gI' \
-				-e 's/#4285f4/#e74c3c/gI' '{}' \;
-			;;
-		papirus-adapta-nokto)
-			theme_name="Papirus Adapta Nokto"
-			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#444444/#cfd8dc/gI' \
-				-e 's/#4285f4/#e74c3c/gI' '{}' \;
 			;;
 	esac
 
