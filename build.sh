@@ -10,10 +10,20 @@ declare -a THEMES=(
 	papirus-dark
 )
 
-declare -a SIZES=(
-	16
-	32
-	64
+declare -A SIZES_MAP=(
+	[16]="-density 96"
+	[20]="-density 96 -extent 20x20"
+	[24]="-density 96 -extent 24x24"
+	[28]="-density 96 -extent 28x28"
+	[32]="-density 192 -resize 32x32"
+	[36]="-density 192 -resize 32x32 -extent 36x36"
+	[40]="-density 192 -resize 32x32 -extent 40x40"
+	[44]="-density 192 -resize 32x32 -extent 44x44"
+	[48]="-density 288 -resize 48x48"
+	[52]="-density 288 -resize 48x48 -extent 52x52"
+	[56]="-density 288 -resize 48x48 -extent 56x56"
+	[60]="-density 288 -resize 48x48 -extent 60x60"
+	[64]="-density 384 -extent 64x64"
 )
 
 : "${DEST_DIR:=$SCRIPT_DIR}"
@@ -58,8 +68,8 @@ for theme in "${THEMES[@]}"; do
 	<Source>${theme}</Source>
 	<Author>Alexey Varfolomeev</Author>
 	<Mail>varlesh@gmail.com</Mail>
-	$(for size in "${SIZES[@]}"; do \
-		printf '<size primary="1">%sx%s</size>\n' "${size}" "$size"; \
+	$(for size in "${!SIZES_MAP[@]}"; do \
+		printf '<size primary="1">%sx%s</size>\n' "$size" "$size"; \
 	done)
 	</Theme>
 	</FileZilla3>
@@ -69,13 +79,15 @@ for theme in "${THEMES[@]}"; do
 	cp -f "$SCRIPT_DIR/AUTHORS" "$SCRIPT_DIR/LICENSE" "$dest_theme_dir"
 
 	# Convert to bitmap images
-	for size in "${SIZES[@]}"; do
+	for size in "${!SIZES_MAP[@]}"; do
 		bitmap_dir="$DEST_DIR/$theme/${size}x${size}"
 		mkdir -p "$bitmap_dir"
-		find "$build_theme_dir" -name '*.svg' | while read -r file; do
-			bitmap_file="${bitmap_dir}/$(basename -s .svg "$file").png"
+		read -ra opts <<< "${SIZES_MAP[$size]}"
+		for file in "$build_theme_dir"/*; do
+			[ -f "$file" ] || continue
+			bitmap_file="$bitmap_dir/$(basename "$file" .svg).png"
 			printf 'Converting "%s" -> "%s"\n' "$file" "$bitmap_file" >&2
-			rsvg-convert -w "$size" -h "$size" -f png "$file" -o "$bitmap_file"
+			convert -background none -gravity center "${opts[@]}" "$file" "$bitmap_file"
 		done
 	done
 done
