@@ -36,33 +36,30 @@ for theme in "${THEMES[@]}"; do
 	case "$theme" in
 		papirus)
 			theme_name="Papirus"
-			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#5c616c/#5c616c/gI' \
-				-e 's/#5294e2/#5294e2/gI' '{}' \;
 			;;
 		papirus-dark)
 			theme_name="Papirus Dark"
 			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#5c616c/#d3dae3/gI' \
-				-e 's/#5294e2/#5294e2/gI' '{}' \;
+				-e 's/#444444/#d3dae3/gI' \
+				-e 's/#4285f4/#4285f4/gI' '{}' \;
 			;;
 		epapirus)
 			theme_name="ePapirus"
 			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#5c616c/#6e6e6e/gI' \
-				-e 's/#5294e2/#5294e2/gI' '{}' \;
+				-e 's/#444444/#6e6e6e/gI' \
+				-e 's/#4285f4/#4285f4/gI' '{}' \;
 			;;
 		papirus-adapta)
 			theme_name="Papirus Adapta"
 			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#5c616c/#414c52/gI' \
-				-e 's/#5294e2/#e74c3c/gI' '{}' \;
+				-e 's/#444444/#414c52/gI' \
+				-e 's/#4285f4/#e74c3c/gI' '{}' \;
 			;;
 		papirus-adapta-nokto)
 			theme_name="Papirus Adapta Nokto"
 			find "$build_theme_dir" -type f -name '*.svg' -exec sed -i \
-				-e 's/#5c616c/#cfd8dc/gI' \
-				-e 's/#5294e2/#e74c3c/gI' '{}' \;
+				-e 's/#444444/#cfd8dc/gI' \
+				-e 's/#4285f4/#e74c3c/gI' '{}' \;
 			;;
 	esac
 
