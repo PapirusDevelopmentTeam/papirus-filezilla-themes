@@ -49,6 +49,8 @@ On Windows machine, you can install the Papirus themes in just two steps:
 1. Download the zip archive attached to the [latest release](https://github.com/PapirusDevelopmentTeam/papirus-filezilla-themes/releases/latest).
 2. Unzip the folders to `<installition_path>\resources` (usually `C:\Program Files\FileZilla FTP Client\resources`).
 
+**NOTE:** The dark background is not a part of the icon theme. See [#12](https://github.com/PapirusDevelopmentTeam/papirus-filezilla-themes/issues/12)
+
 ###  Manual Install
 
 1. Install dependencies:
