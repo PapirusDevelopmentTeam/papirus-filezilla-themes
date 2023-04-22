@@ -38,7 +38,7 @@ Packages in this section are not part of the official repositories. If you have 
 
 | **Distro** | **Maintainer** | **Package** |
 |:-----------|:---------------|:------------|
-| Arch Linux | caltlgin | [papirus-filezilla-themes](https://aur.archlinux.org/packages/papirus-filezilla-themes/) <sup>AUR</sup> |
+| Arch Linux | [Nicola Revelant](https://aur.archlinux.org/account/nicolarevelant44) | [papirus-filezilla-themes](https://aur.archlinux.org/packages/papirus-filezilla-themes/) <sup>AUR</sup> |
 
 **NOTE:** If you maintainer and want be in the list please create an issue or send a pull request.
 
